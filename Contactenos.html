@@ -1,51 +1,133 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Language" content="es" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Formulario de Contactenos</title>
+<title>Contáctenos - INFINIX MIRROX</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f8fc;
+    margin:0;
+    padding:40px;
+}
+
+.contenedor{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 3px 15px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    color:#1e40af;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:120px;
+}
+
+.botones{
+    margin-top:20px;
+    text-align:center;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    margin:5px;
+}
+
+button:hover{
+    background:#1e40af;
+}
+
+.contacto{
+    text-align:center;
+    margin-top:30px;
+    color:#555;
+}
+
+</style>
+
 </head>
 
-<body background="playfondo.png" marginwidth ="70">
+<body>
 
-<br />
-<center>
-<font face="arial" size="5">
-<u> <p>Nos puedes contactar </p> </u>
-</font>
-</center>
+<div class="contenedor">
 
-<form action="pstation@sonycomputer.com" method="post" enctype="text/plain">
+<h1>Contáctanos</h1>
 
-<font face="Georgia" size="3">
-Nombre<br />
-<input name="nombre" type="text" value="" size="20" maxlength="15"/><br /> <br />
-Direccion<br />
-<input name="direccion" type="text" value="" size="20" maxlength="15"/><br /> <br />
-Telefono<br />
-<input name="telfono" type="text" value="" size="20" maxlength="15"/><br /> <br />
-Correo<br />
-<input name="correo" type="text" value="" size="20" maxlength="15"/><br /> <br />
+<form>
 
-<br />
-Tipo de persona<br /> <br />
-Natural <input name="prefiere" type="radio" value="estudiar" checked/>&nbsp; Juridica
-<input name="prefiere" type="radio" value="trabajar"/>
+<label>Nombre</label>
+<input type="text" placeholder="Ingrese su nombre">
 
+<label>Dirección</label>
+<input type="text" placeholder="Ingrese su dirección">
 
-<br />
-<br />
-Solicitud:<br />
+<label>Teléfono</label>
+<input type="text" placeholder="Ingrese su teléfono">
 
+<label>Correo electrónico</label>
+<input type="email" placeholder="Ingrese su correo">
 
-<textarea name="ejemploarea" cols="30" rows="3">Escribe el texto de su solicitud</textarea>
-<br />
-<br />
-<input name="botone" type="submit" value="Enviar"/>
-<input name="botonr" type="reset" value="Restaurar"/>
+<label>Tipo de cliente</label>
 
-</font>
+<input type="radio" name="tipo"> Persona Natural
+<input type="radio" name="tipo"> Persona Jurídica
+
+<label>Solicitud</label>
+<textarea placeholder="Escriba aquí su mensaje"></textarea>
+
+<div class="botones">
+<button type="submit">Enviar</button>
+<button type="reset">Limpiar</button>
+</div>
+
 </form>
+
+<div class="contacto">
+
+<h3>INFINIX MIRROX</h3>
+
+<p>📍 Soacha, Cundinamarca</p>
+
+<p>📱 316 560 4622</p>
+
+<p>✉️ infinxmirrox@gmail.com</p>
+
+<p>
+https://wa.me/573165604622
+📲 Escríbenos por WhatsApp
+</a>
+</p>
+
+</div>
+
+</div>
 
 </body>
 
